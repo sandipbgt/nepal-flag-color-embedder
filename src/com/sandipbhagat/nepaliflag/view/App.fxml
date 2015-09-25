@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="borderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/8.0.45" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sandipbhagat.nepaliflag.view.AppController">
+    <top>
+        <VBox BorderPane.alignment="CENTER">
+            <children>
+                <HBox alignment="TOP_CENTER">
+                    <children>
+                        <Label fx:id="titleLabel" alignment="CENTER_RIGHT" maxWidth="1.7976931348623157E308" text="Nepal Flag Colour Profile Picture Generator" textAlignment="CENTER">
+                            <padding>
+                                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                            </padding>
+                        </Label>
+                    </children>
+                </HBox>
+                <Separator prefWidth="200.0" />
+            </children>
+        </VBox>
+    </top>
+    <center>
+        <StackPane fx:id="contentPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="dragAndDropLabel" text="Drop your image here or click load button" textAlignment="CENTER" wrapText="true" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin></StackPane>
+    </center>
+    <right>
+        <VBox prefHeight="345.0" prefWidth="172.0" spacing="10.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label fx:id="transparencyLabel" alignment="CENTER" maxWidth="1.7976931348623157E308" text="Adjust Transparency" />
+                <Slider fx:id="transparencySlider" blockIncrement="0.1" max="1.0" value="0.5" />
+                <Button fx:id="loadButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Load" />
+                <Button fx:id="saveButton" layoutX="18.0" layoutY="54.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Save" />
+                <Button fx:id="clearButton" layoutX="18.0" layoutY="18.0" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="New" />
+            <Button fx:id="aboutButton" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="About" />
+            </children>
+            <padding>
+                <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+            </padding>
+        </VBox>
+    </right>
+</BorderPane>
